@@ -13,10 +13,8 @@ public class sumOfEvenAndOdd {
             boolean flag = true;
             if (x != -1) {
 
-                for (int i = 2; i <= Math.sqrt(x) && flag; i++) {
-                    if (x % i == 0) {
-                        flag = false;
-                    }
+                if (x % 2 == 0) {
+                    flag = false;
                 }
                 if (flag) {
                     oddSum += x;
